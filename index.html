@@ -45,7 +45,7 @@
                       <li><a class="dropdown-item" href="addsOn.html">Add-Ons</a></li>
                     </ul>
                   <li class="nav-item">
-                        <a class="nav-link" href="#">Cart</a>
+                        <a class="nav-link" href="cart.html">Cart</a>
                   </li>
                   <li class="nav-item ">
                     <a class="nav-link" href="aboutUs.html">About Us</a>
@@ -64,12 +64,12 @@
 <!-- Showcase -->
     <section id="landing">
         <div class="container d-inline-block ">
-       <h1 class="mt-5 text-sm-start text-md-center" style="font-family: CutieFonttttttt; font-size: 60px; " >Milk Tea</h1>
-       <h1 class="text-sm-start text-md-center" style="font-family: CutieFonttttttt;" >and</h1>
-       <h1 class="text-sm-start text-md-center" style="font-family: CutieFonttttttt; font-size: 40px;" >Friends</h1>
-       <h1 class="text-sm-start text-md-center" style="font-family: CutieFonttttttt;" >a</h1>
-       <h1 class="mb-4 text-sm-start text-md-center" style="font-family: CutieFonttttttt; font-size: 40px;" >perfect</h1>
-       <h1 class="text-sm-start text-md-center" style="font-family: CutieFonttttttt; font-size: 45px;" >Blends</h1>
+       <h1 class="hidden mt-5 text-sm-start text-md-center" style="font-family: CutieFonttttttt; font-size: 60px; " >Milk Tea</h1>
+       <h1 class="hidden text-sm-start text-md-center" style="font-family: CutieFonttttttt;" >and</h1>
+       <h1 class="hidden text-sm-start text-md-center" style="font-family: CutieFonttttttt; font-size: 40px;" >Friends</h1>
+       <h1 class="hidden text-sm-start text-md-center" style="font-family: CutieFonttttttt;" >a</h1>
+       <h1 class="hidden mb-4 text-sm-start text-md-center" style="font-family: CutieFonttttttt; font-size: 40px;" >perfect</h1>
+       <h1 class="hidden text-sm-start text-md-center" style="font-family: CutieFonttttttt; font-size: 45px;" >Blends</h1>
 
         </div>
       </section>
@@ -77,8 +77,8 @@
     <div class="d-flex justify-content-center align-items-center mb-md-5 mt-md-5">
       <div class="container d-mg-flex justify-content-center mb-md-5 mt-md-5">
         <div class="d-md-flex col-md=5">
-          <h2 class="mt-5 mt-md-0 px-3" style="font-family: CutieFontttttt; font-size: 55px;" >There's always Time for Tea</h2>
-          <video controls loop width="100%" height="320" class="mb-3 width-md-50">
+          <h2 class="hidden there mt-5 mt-md-0 px-3" style="font-family: CutieFontttttt; font-size: 55px;" >There's always Time for Tea</h2>
+          <video controls loop width="100%" height="320" class="hidden there-vid mb-3 width-md-50">
             <source src="./img/vid/try.mp4" type="video/mp4">
           </video>
         </div>
@@ -90,12 +90,12 @@
     <main id="mission"> 
       <div class="container d-lg-flex py-lg-5" style="align-items: center; color: floralwhite;" >
           <div>
-            <img src="./img/image/34.png" class="img-fluid " alt="...">
+            <img src="./img/image/34.png" class="img-fluid hidden h-img" alt="...">
           </div>    
         <div class="d-lg-block m-3 align-items-center justify-contents" >
-            <h2 class="text-sm-start text-md-center" style="font-family: CutieFonttt; padding-top: 20px;padding-bottom: 20px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, ipsa.</h2>
+            <h2 class="text-sm-start text-md-center hidden h-lorem" style="font-family: CutieFonttt; padding-top: 20px;padding-bottom: 20px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, ipsa.</h2>
           <div class="d-flex justify-content-center align-items-center">
-            <a href="Offers.html" class="btn shadow btn-lg" style="font-family: CutieFonttt; font-size: 25px; background-color: rgb(196, 178, 132); color: rgba(58, 42, 12, 0.9); border-radius: 20%;">Order Now</a>
+            <a href="Offers.html" class="btn shadow btn-lg hidden h-order" style="font-family: CutieFonttt; font-size: 25px; background-color: rgb(196, 178, 132); color: rgba(58, 42, 12, 0.9); border-radius: 20%;">Order Now</a>
           </div>
         </div>
       </div>
@@ -187,5 +187,26 @@
       <p class="text-center mb-0">&copy;Kkopi.Tea 2023  |  @ll Rights Reserved</p>
   </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+                <!-- this is for the animation -->
+                <script type="text/javascript">
+
+                  const observer = new IntersectionObserver((samples) =>{
+                     samples.forEach((sample) => {
+                     console.log(sample)
+                     if (sample.isIntersecting){
+                        sample.target.classList.add('show');
+                     } else{
+                        sample.target.classList.remove('show');
+                        }
+                     });
+                  
+                  });
+                  
+                  
+                  
+                  const hiddenElements = document.querySelectorAll('.hidden');
+                  hiddenElements.forEach((armand) => observer.observe(armand));
+                  </script>
 </body>
 </html>

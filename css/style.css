@@ -181,6 +181,24 @@ area div div div h2{
   font-size: 100px;
 }
 
+
+
+/* this part is for the animation properties*/
+.hidden{
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.show{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+
+}
+
+
  /* ........................Iced Latte.................... */
 
 
@@ -231,6 +249,58 @@ area div div div h2{
     padding-bottom: 60px;
     background-color: rgba(0, 0, 0, 0.5);
     margin-bottom: 70px;
+}
+
+
+ /* this part is for the animation delay */
+ #landing h1:nth-child(6){
+  transition-delay: 200ms;
+
+}
+
+#landing h1:nth-child(5){
+  transition-delay: 170ms;
+ 
+}
+
+#landing h1:nth-child(4){
+  transition-delay:140ms;
+ 
+}
+
+#landing h1:nth-child(3){
+  transition-delay: 110ms;
+ 
+}
+
+#landing h1:nth-child(2){
+  transition-delay: 80ms;
+ 
+}
+
+#landing h1:nth-child(1){
+  transition-delay: 50ms;
+ 
+}
+
+.there{
+  transition-delay: 400ms;
+}
+
+.there-vid {
+  transition-delay: 200ms;
+}
+
+.h-img{
+  transition-delay:400ms ;
+}
+
+.h-lorem{
+  transition-delay: 200ms;
+}
+
+.h-order{
+  transition-delay:200ms ;
 }
 
 }
@@ -294,6 +364,59 @@ area div div div h2{
     padding-bottom: 40px;
     background-color: rgba(0, 0, 0, 0.5);
     margin-bottom: 60px;
+}
+
+
+/* this part is for animation */
+
+#landing h1:nth-child(6){
+  transition-delay: 200ms;
+
+}
+
+#landing h1:nth-child(5){
+  transition-delay: 170ms;
+ 
+}
+
+#landing h1:nth-child(4){
+  transition-delay:140ms;
+ 
+}
+
+#landing h1:nth-child(3){
+  transition-delay: 110ms;
+ 
+}
+
+#landing h1:nth-child(2){
+  transition-delay: 80ms;
+ 
+}
+
+#landing h1:nth-child(1){
+  transition-delay: 50ms;
+ 
+}
+
+.there{
+  transition-delay: 400ms;
+}
+
+.there-vid {
+  transition-delay: 200ms;
+}
+
+.h-img{
+  transition-delay:400ms ;
+}
+
+.h-lorem{
+  transition-delay: 200ms;
+}
+
+.h-order{
+  transition-delay:200ms ;
 }
 
 }
