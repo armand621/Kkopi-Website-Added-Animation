@@ -46,7 +46,7 @@
                 <li><a class="dropdown-item" href="addsOn.html">Add-Ons</a></li>
               </ul>
             <li class="nav-item">
-                  <a class="nav-link" href="#">Cart</a>
+                  <a class="nav-link" href="cart.html">Cart</a>
             </li>
             <li class="nav-item ">
               <a class="nav-link" href="aboutUs.html">About Us</a>
@@ -64,19 +64,19 @@
 
     <section id="landing">
         <div class="d-md-flex">
-            <div class="d-flex justify-content-center align-items-center m-lg-4 mx-md-4 col-md-5 col-lg-5">
+            <div class="hidden amt-1 d-flex justify-content-center align-items-center m-lg-4 mx-md-4 col-md-5 col-lg-5">
                 <img class="container col-md-11 col-lg-10" src="./img/image/contact.png" alt="">
             </div>
             <div class="container my-3 my-md-0 m-lg-4 col-md-5 col-lg-6">           
-                <h1 class="py-3" style="font-family: CutieFonttt; font-size: 50px;">Contact Us</h1>
-                <p style="font-size: 20px;">Questions, bug reports feedback — we're here for it all.<br> Email us with any questions or inquiries or call 540-435-4674. We would be happy to answer all your questions.</p>
+                <h1 class="hidden amt-2 py-3" style="font-family: CutieFonttt; font-size: 50px;">Contact Us</h1>
+                <p class="hidden amt-3" style="font-size: 20px;">Questions, bug reports feedback — we're here for it all.<br> Email us with any questions or inquiries or call 540-435-4674. We would be happy to answer all your questions.</p>
             </div>
         </div>
     </section>
 
     <section id="infos" >
         <div class="container d-md-flex ">
-            <div class="col-md-4 text-center"> 
+            <div class="hidden apt-1 col-md-4 text-center"> 
                 <h3 style="font-family: CutieFonttt; padding-top: 30px;">Address</h3>
                 <div class="d-grid" style="list-style-type: none; padding-bottom: 50px;">
                     <li>Sto. Rosario Capas, Tarlac</li>
@@ -84,7 +84,7 @@
                     <li>O'Donnell Capas, Tarlac</li>
                 </div>
             </div>
-            <div class="my-5 my-md-0 mx-md-4 col-md-4 text-center">
+            <div class="hidden apt-2 my-5 my-md-0 mx-md-4 col-md-4 text-center">
                 <h3 style="font-family: CutieFonttt; padding-top: 30px;">Phone</h3>
                 <div class="d-grid" style="list-style-type: none; padding-bottom: 50px;">
                     <li>0935-645-7534</li>
@@ -92,7 +92,7 @@
                     <li>2456-754-6963</li>
                 </div>
             </div>
-            <div class="col-md-4 text-center">
+            <div class="hidden apt-3 col-md-4 text-center">
                 <h3 style="font-family: CutieFonttt; padding-top: 30px;">Email</h3>
                 <div class="d-grid" style="list-style-type: none; padding-bottom: 50px;">
                     <li>KkopiStoRosario@gmail.com</li>
@@ -104,7 +104,7 @@
     </section>
 
     <section id="form">
-        <div class="container">  
+        <div class="container hidden">  
             <div>           
                 <form action="#" method="post" class="mx-md-5">
                 <label for="name">Name:</label>
@@ -166,5 +166,25 @@
       <p class="text-center mb-0">&copy;Kkopi.Tea 2023  |  @ll Rights Reserved</p>
   </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+                   <!-- this is for the animation -->
+                   <script type="text/javascript">
+
+                    const observer = new IntersectionObserver((samples) =>{
+                       samples.forEach((sample) => {
+                       console.log(sample)
+                       if (sample.isIntersecting){
+                          sample.target.classList.add('show');
+                       } else{
+                          sample.target.classList.remove('show');
+                          }
+                       });
+                    
+                    });
+                    
+                    
+                    
+                    const hiddenElements = document.querySelectorAll('.hidden');
+                    hiddenElements.forEach((armand) => observer.observe(armand));
+                    </script>
 </body>
 </html>
