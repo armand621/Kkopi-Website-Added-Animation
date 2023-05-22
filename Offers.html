@@ -46,7 +46,7 @@
                       <li><a class="dropdown-item" href="addsOn.html">Add-Ons</a></li>
                     </ul>
                   <li class="nav-item">
-                        <a class="nav-link" href="#">Cart</a>
+                        <a class="nav-link" href="cart.html">Cart</a>
                   </li>
                   <li class="nav-item ">
                     <a class="nav-link" href="aboutUs.html">About Us</a>
@@ -65,10 +65,10 @@
 <main>
   <section id="head">
     <div class=" ">
-      <div class="col-md-5">
+      <div class="col-md-5 hidden hla-1 ">
         <img src="./img/image/l.png" class="img-fluid " alt="...">
       </div>
-      <div class="container d-none d-md-flex col-md-7  ">
+      <div class="container d-none d-md-flex col-md-7 hidden hla-2">
         <h1 class="d-lg-none">YOU CANT BUY HAPINESS BUT YOU CAN BUY A TEA AND THATS KIND OF THE SAME THING</h1>
         <div class="d-none d-lg-block px-5">
           <p style="font-size: 40px; margin: 0px;">YOU CANT BUY</p>
@@ -86,9 +86,9 @@
     <div class="container">
       <div class="row" style="font-family: CutieFontttttttt;">
         <div class="col-12 text-center mb-5">
-          <h1 class="fw-bold"  style=" font-size: 60px; font-family: CutieFonttttttt;">Iced Latte</h1>
+          <h1 class="fw-bold hidden hla-4"  style=" font-size: 60px; font-family: CutieFonttttttt;">Iced Latte</h1>
         </div>
-        <div class="col-md-6 col-lg-3 mb-4" style="padding-bottom: 50px;">
+        <div class="hidden hla-1 col-md-6 col-lg-3 mb-4" style="padding-bottom: 50px;">
           <div class="card h-100 shadow">
             <img src="./img/image/g.png" class="card-img-top img-fluid" alt="...">
             <div class="card-body">
@@ -98,7 +98,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-3 mb-4" style="padding-bottom: 50px;">
+        <div class="hidden hla-2 col-md-6 col-lg-3 mb-4" style="padding-bottom: 50px;">
           <div class="card h-100 shadow">
             <img src="./img/image/wc.png" class="card-img-top img-fluid" alt="...">
             <div class="card-body">
@@ -108,7 +108,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-3 mb-4" style="padding-bottom: 50px;">
+        <div class="hidden hla-3 col-md-6 col-lg-3 mb-4" style="padding-bottom: 50px;">
           <div class="card h-100 shadow">
             <img src="./img/image/vl.png" class="card-img-top img-fluid" alt="...">
             <div class="card-body">
@@ -118,7 +118,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-3 mb-4" style="padding-bottom: 50px;">
+        <div class="hidden hla-4 col-md-6 col-lg-3 mb-4" style="padding-bottom: 50px;">
           <div class="card h-100 shadow">
             <img src="./img/image/g.png" class="card-img-top img-fluid" alt="...">
             <div class="card-body">
@@ -128,7 +128,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-3 mb-4" style="padding-bottom: 50px;">
+        <div class="hidden hla-1 col-md-6 col-lg-3 mb-4" style="padding-bottom: 50px;">
           <div class="card h-100 shadow">
             <img src="./img/image/19.jpg" class="card-img-top img-fluid" alt="...">
             <div class="card-body">
@@ -138,7 +138,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-3 mb-4" style="padding-bottom: 50px;">
+        <div class="hidden hla-2 col-md-6 col-lg-3 mb-4" style="padding-bottom: 50px;">
           <div class="card h-100 shadow">
             <img src="./img/image/7.jpg" class="card-img-top img-fluid" alt="...">
             <div class="card-body">
@@ -148,7 +148,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-3 mb-4" style="padding-bottom: 50px;">
+        <div class="hidden hla-3 col-md-6 col-lg-3 mb-4" style="padding-bottom: 50px;">
           <div class="card h-100 shadow">
             <img src="./img/image/hn.png" class="card-img-top img-fluid" alt="...">
             <div class="card-body">
@@ -158,7 +158,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-3 mb-4" style="padding-bottom: 50px;">
+        <div class="hidden hla-4 col-md-6 col-lg-3 mb-4" style="padding-bottom: 50px;">
           <div class="card h-100 shadow">
             <img src="./img/image/f.jpg" class="card-img-top img-fluid" alt="...">
             <div class="card-body">
@@ -217,5 +217,25 @@
   <p class="text-center mb-0">&copy;Kkopi.Tea 2023  |  @ll Rights Reserved</p>
 </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <!-- this is for the animation -->
+        <script type="text/javascript">
+
+          const observer = new IntersectionObserver((samples) =>{
+             samples.forEach((sample) => {
+             console.log(sample)
+             if (sample.isIntersecting){
+                sample.target.classList.add('show');
+             } else{
+                sample.target.classList.remove('show');
+                }
+             });
+          
+          });
+          
+          
+          
+          const hiddenElements = document.querySelectorAll('.hidden');
+          hiddenElements.forEach((armand) => observer.observe(armand));
+          </script>
 </body>
 </html>
