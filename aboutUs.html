@@ -46,7 +46,7 @@
                 <li><a class="dropdown-item" href="addsOn.html">Add-Ons</a></li>
               </ul>
             <li class="nav-item">
-                  <a class="nav-link" href="#">Cart</a>
+                  <a class="nav-link" href="cart.html">Cart</a>
             </li>
             <li class="nav-item ">
               <a class="nav-link active" href="aboutUs.html">About Us</a>
@@ -64,10 +64,10 @@
 
     <section id="landing">
         <div class="d-md-flex">
-            <div class="d-flex justify-content-center align-items-center mx-md-4 col-md-5 col-lg-5">
+            <div class="hidden ab-1 d-flex justify-content-center align-items-center mx-md-4 col-md-5 col-lg-5">
                 <img class="container col-md-11 col-lg-10" src="./img/image/about.png" alt="">
             </div>
-            <div class="container my-md-0 m-lg-4 col-md-5 col-lg-6">           
+            <div class="hidden ab-2 container my-md-0 m-lg-4 col-md-5 col-lg-6">           
                 <h1 class="py-3 text-center" style="font-family: CutieFonttt; font-size: 50px;">About Us</h1>
             </div>
         </div>
@@ -76,13 +76,13 @@
     <section id="about">
         <div class="container d-md-flex">
             <div class="col-md-6">
-                <div class="">           
+                <div class="hidden b1-1">           
                     <h1 style="font-family: CutieFonttt; font-size: 30px;">About</h1>
                     <p style="font-size: 20px;">Kkopi.Tea is all set and ready to become the country's leading franchise in the beverage industry, equipped with the highest quality ingredients and products for food service businesses. Be it in milk tea or in coffee. Kkopi.Tea offers only the safest, most consistent, and most economical products for every consumer.<br>With hundreds of outlets nationwide, the brand has maximum availability and accessibility.<br> As a testament to its strict commitment to excellence, it has been registered with the Food and Drug Administration (FDA), the standard certification for food safety and quality in the country. This means that the company complies with the most stringent rules and regulations and assures that every product is the best product possible.<br>Truly, Kkopi.Tea is a brand for all aspiring entrepreneurs. This is where accessibility, availability, and affordability meet in one place.</p>
                 </div>
             </div>
             <div class="col-md-6">
-                <div class="">           
+                <div class="hidden b1-2">           
                     <h1 style="font-family: CutieFonttt; font-size: 30px;">Our Mission</h1>
                     <p style="font-size: 20px;">To be available EVERYWHERE, To provide high quality beverage and to maintain the price where everyone can afford.</p>
                 </div>
@@ -93,17 +93,17 @@
     <section id="team">
         <div class="container">
           <div class="">           
-              <h1 style="font-family: CutieFonttt; font-size: 30px;">The Team</h1>
-              <p style="font-size: 20px;">Kkopi.Tea is backed with a set of highly specialized individuals who is in the food and beverage industry for over 5 years. With the expertise of research and development, supply chain, and management, the brand has expanded exponentially even in the pandemic period and is now taking the market by storm.</p>
+              <h1 style="font-family: CutieFonttt; font-size: 30px;" class="hidden at-1">The Team</h1>
+              <p style="font-size: 20px;" class="hidden at-2">Kkopi.Tea is backed with a set of highly specialized individuals who is in the food and beverage industry for over 5 years. With the expertise of research and development, supply chain, and management, the brand has expanded exponentially even in the pandemic period and is now taking the market by storm.</p>
             </div>
             <div>
               <h1 class="text-center" style="font-family: CutieFonttt; font-size: 50px; padding-top: 30px;">Our Team</h1>
             </div>
             <div id="team1">
             <div class="d-md-flex text-center">
-              <div class="shadow col-md-4" style="font-family: CutieFonttttttt; font-size: 30px;">Jenny Santos</div>
-              <div class="shadow my-5 my-md-0 col-md-4 mx-md-2" style="font-family: CutieFonttttttt; font-size: 30px;">Armand Robin Tangonan</div>
-              <div class="shadow col-md-4" style="font-family: CutieFonttttttt; font-size: 30px;">Addrialene Mendoza</div>
+              <div class="hidden apt-1 shadow col-md-4" style="font-family: CutieFonttttttt; font-size: 30px;">Jenny Santos</div>
+              <div class="hidden apt-2 shadow my-5 my-md-0 col-md-4 mx-md-2" style="font-family: CutieFonttttttt; font-size: 30px;">Armand Robin Tangonan</div>
+              <div class="hidden apt-3 shadow col-md-4" style="font-family: CutieFonttttttt; font-size: 30px;">Addrialene Mendoza</div>
             </div>
           </div>
         </div>
@@ -153,5 +153,25 @@
     <p class="text-center mb-0">&copy;Kkopi.Tea 2023  |  @ll Rights Reserved</p>
 </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+                   <!-- this is for the animation -->
+                   <script type="text/javascript">
+
+                    const observer = new IntersectionObserver((samples) =>{
+                       samples.forEach((sample) => {
+                       console.log(sample)
+                       if (sample.isIntersecting){
+                          sample.target.classList.add('show');
+                       } else{
+                          sample.target.classList.remove('show');
+                          }
+                       });
+                    
+                    });
+                    
+                    
+                    
+                    const hiddenElements = document.querySelectorAll('.hidden');
+                    hiddenElements.forEach((armand) => observer.observe(armand));
+                    </script>
 </body>
 </html>
