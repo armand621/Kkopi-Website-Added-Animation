@@ -88,6 +88,25 @@
     
   }
 
+
+
+    /* animation for hidden */
+
+.hidden{
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.show{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+
+}
+
+
   
 @media (min-width: 768px) {
     #head div{
@@ -95,6 +114,19 @@
         justify-content: center; 
         align-items: center;
     }
+
+  .hla-1{
+      transition-delay: 800ms;
+  }
+  .hla-2{
+      transition-delay: 600ms;
+  }
+  .hla-3{
+      transition-delay: 400ms;
+  }
+  .hla-4{
+    transition-delay: 200ms;      
+  }
 }
 
 
@@ -102,4 +134,17 @@
     #head div{
         font-size: 100px;
     }
+
+  .hla-1{
+      transition-delay: 800ms;
+  }
+  .hla-2{
+      transition-delay: 600ms;
+  }
+  .hla-3{
+      transition-delay: 400ms;
+  }
+  .hla-4{
+    transition-delay: 200ms;      
+  }
  }
