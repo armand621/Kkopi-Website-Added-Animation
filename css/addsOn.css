@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'CutieFont';
+    src: url('../font/BreeSerif-Regular.ttf') format('OpenType');
+  }
+
+  @font-face {
+    font-family: 'CutieFontt';
+    src: url('../font/Shrikhand-Regular.ttf') format('OpenType');
+  }
+
+  @font-face {
+    font-family: 'CutieFonttt';
+    src: url('../font/TitanOne-Regular.ttf') format('OpenType');
+  }
+
+  @font-face {
+    font-family: 'CutieFontttt';
+    src: url('../font/LilitaOne-Regular.ttf') format('OpenType');
+  }
+
+  @font-face {
+    font-family: 'CutieFonttttt';
+    src: url('../font/Chewy-Regular.ttf') format('OpenType');
+  }
+  
+  @font-face {
+    font-family: 'CutieFontttttt';
+    src: url('../font/DancingScript-VariableFont_wght.ttf') format('OpenType');
+  }
+
+  @font-face {
+    font-family: 'CutieFonttttttt';
+    src: url('../font/LeckerliOne-Regular.ttf') format('OpenType');
+  }
+
+  @font-face {
+    font-family: 'CutieFontttttttt';
+    src: url('../font/Futura Std Heavy.ttf') format('OpenType');
+  }
+
+  
+
+#myweb{
+    width: auto;
+    background-color: rgba(230, 215, 187, 0.774);   
+}
+
+#head div{
+    /* background-image: url(../img/image/l1.png);
+    background-size: cover; */
+    font-family: CutieFonttt;
+    height: auto;
+    margin-top: 40px;
+    padding-top: 10px;
+    margin-bottom: 40px;
+    /* border: 2px solid; */
+    background-color: beige;
+
+
+}
+
+#head div img{
+    height: 300px;
+}
+
+#milktea div button{
+  border: 1px solid rgb(94, 68, 29);
+  margin-bottom: 5px;
+  border-radius: 20%;
+  background-color: rgba(222, 182, 141, 0.721);
+  color: black;
+}
+
+#milktea div button:hover{
+  background-color: rgb(139, 73, 3);
+  color: linen;
+}
+
+
+
+
+
+#footer{
+    margin-top: 30px;
+    background-color: rgba(33, 18, 3, 0.803);
+    padding: 20px;
+    color: lightgray;
+    
+  }
+
+  
+@media (min-width: 768px) {
+    #head div{
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+    }
+}
+
+
+@media (min-width: 992px) {
+    #head div{
+        font-size: 100px;
+    }
+ }

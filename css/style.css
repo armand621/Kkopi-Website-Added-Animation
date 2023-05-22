@@ -1,0 +1,299 @@
+@font-face {
+    font-family: 'CutieFont';
+    src: url('../font/BreeSerif-Regular.ttf') format('OpenType');
+  }
+
+  @font-face {
+    font-family: 'CutieFontt';
+    src: url('../font/Shrikhand-Regular.ttf') format('OpenType');
+  }
+
+  @font-face {
+    font-family: 'CutieFonttt';
+    src: url('../font/TitanOne-Regular.ttf') format('OpenType');
+  }
+
+  @font-face {
+    font-family: 'CutieFontttt';
+    src: url('../font/LilitaOne-Regular.ttf') format('OpenType');
+  }
+
+  @font-face {
+    font-family: 'CutieFonttttt';
+    src: url('../font/Chewy-Regular.ttf') format('OpenType');
+  }
+  
+  @font-face {
+    font-family: 'CutieFontttttt';
+    src: url('../font/DancingScript-VariableFont_wght.ttf') format('OpenType');
+  }
+
+  @font-face {
+    font-family: 'CutieFonttttttt';
+    src: url('../font/LeckerliOne-Regular.ttf') format('OpenType');
+  }
+  
+
+#mywebsite{
+    width: auto;
+    background-color: rgba(230, 215, 187, 0.774);
+}
+
+#landing{
+    background-image: linear-gradient(to bottom,rgba(116, 96, 34, 0.644),rgba(178, 181, 172, 0.564)), url(../img/image/landing.jpg);
+    background-size: cover;
+    background-position: center;
+    width: auto;
+    height: 90vh;
+    display: grid;
+    place-content: center;
+    color: rgba(28, 17, 9, 0.853);
+    margin-bottom: 15px;
+    /* text-shadow: 1px 2px rgb(31, 24, 16);    */
+}
+
+#mission{
+    border: 1px;
+    place-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 40px;
+}
+
+
+
+#footer{
+  background-color: rgba(33, 18, 3, 0.803);
+  padding: 20px;
+  color: lightgray;
+  
+}
+
+.home .carousel-item{
+  min-height: 70vh;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+.home .carousel-item:before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.home .carousel-item .container{
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  align-content: center;
+}
+.home .carousel-item h1{
+  font-size: 60px;
+  color: #ffffff;
+  margin: 0 0 10px;
+  opacity: 0;
+
+}
+.home .carousel-item p{
+  font-size: 30px;
+  margin: 0;
+  color: #eeeeee;
+  opacity: 0;
+}
+.home .carousel-item.active h1{
+  animation: fadeInLeft 0.5s ease forwards;
+}
+.home .carousel-item.active p{
+  animation: fadeInLRight 0.5s ease forwards;
+
+}
+
+video{
+  width:"100px";
+  height:"50px";
+  display: grid;
+
+
+}
+
+@keyframes fadeInLeft {
+    0%{
+      opacity: 0;
+      transform: translate(-30px);
+    }
+    100%{
+      opacity: 1;
+      transform: translate(0px);
+    }
+}
+@keyframes fadeInLRight {
+  0%{
+    opacity: 0;
+    transform: translate(30px);
+  }
+  100%{
+    opacity: 1;
+    transform: translate(0px);
+  }
+}
+
+.home .carousel-controls{
+  position: absolute;
+  left: 30%;
+  bottom: 40px;
+  z-index: 5;
+  transform: translate(-50px)
+}
+
+.home .carousel-indicators{
+  position: relative;
+  margin: 0;
+
+}
+
+.home .carousel-indicators button{
+  height: 50px;
+  width: 50px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  border: 3px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.home .carousel-indicators button.active{
+  border-color: #ffffff;
+  transform: scale(1.2);
+}
+
+area div div div h2{
+  font-size: 100px;
+}
+
+ /* ........................Iced Latte.................... */
+
+
+
+@media (min-width: 768px) {
+
+  .home .carousel-controls{
+    position: absolute;
+    left: 38%;
+    bottom: 40px;
+    z-index: 5;
+    transform: translate(-50px)
+  }
+
+  .home .carousel-indicators button{
+    height: 70px;
+    width: 70px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    border: 3px solid transparent;
+    transition: all 0.3s ease;
+  }
+  
+    .home .carousel-control-next,
+    .home .carousel-control-prev{
+    height: 60px;
+    width: 60px;
+    opacity: 1;
+    z-index: 3;
+    top: 10%;
+    transform: translate(-50%);
+  }
+
+  .home .carousel-control-next{
+      right: -80px;
+  }
+
+  .home .carousel-control-prev{
+      left: -30px;
+  }
+
+  #mission{
+    border: 1px;
+    place-content: center;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 70px;
+}
+
+}
+
+@media (min-width: 992px) { 
+
+  .home .carousel-controls{
+    position: absolute;
+    left: 40%;
+    bottom: 60px;
+    z-index: 5;
+    transform: translate(-50px)
+  }
+  
+    .home .carousel-control-next,
+    .home .carousel-control-prev{
+    height: 60px;
+    width: 60px;
+    opacity: 1;
+    z-index: 3;
+    top: 10%;
+    transform: translate(-50%);
+  }
+
+  .home .carousel-control-next{
+      right: -80px;
+  }
+
+  .home .carousel-control-prev{
+      left: -30px;
+  }
+
+  .home .carousel-indicators button{
+
+    height: 80px;
+    width: 80px;
+    margin: 0 15px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    border: 3px solid transparent;
+    transition: all 0.3s ease;
+  }
+
+  .home .carousel-item{
+    min-height: 90vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+  }
+
+  area div div div h2{
+    font-size: 500px;
+  }
+
+  #mission{
+    border: 1px;
+    place-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 60px;
+}
+
+}

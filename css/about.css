@@ -1,0 +1,143 @@
+@font-face {
+    font-family: 'CutieFont';
+    src: url('../font/BreeSerif-Regular.ttf') format('OpenType');
+  }
+
+  @font-face {
+    font-family: 'CutieFontt';
+    src: url('../font/Shrikhand-Regular.ttf') format('OpenType');
+  }
+
+  @font-face {
+    font-family: 'CutieFonttt';
+    src: url('../font/TitanOne-Regular.ttf') format('OpenType');
+  }
+
+  @font-face {
+    font-family: 'CutieFontttt';
+    src: url('../font/LilitaOne-Regular.ttf') format('OpenType');
+  }
+
+  @font-face {
+    font-family: 'CutieFonttttt';
+    src: url('../font/Chewy-Regular.ttf') format('OpenType');
+  }
+  
+  @font-face {
+    font-family: 'CutieFontttttt';
+    src: url('../font/DancingScript-VariableFont_wght.ttf') format('OpenType');
+  }
+
+  @font-face {
+    font-family: 'CutieFonttttttt';
+    src: url('../font/LeckerliOne-Regular.ttf') format('OpenType');
+  }
+
+  @font-face {
+    font-family: 'CutieFontttttttt';
+    src: url('../font/Futura Std Heavy.ttf') format('OpenType');
+  }
+
+  
+
+#mywebsite{
+    width: auto;
+    background-color:rgb(231, 219, 204);   
+}
+
+/* .............................................. */
+#landing{
+    padding-top: 100px;
+    padding-bottom: 20px;
+    background-color: rgba(151, 138, 117, 0.396);
+}
+
+/* #landing div div{
+    height: 350px;
+}
+
+#div{
+    height: 200px;
+} */
+
+#about{
+    padding-top: 30px;
+}
+#about div h1,p{
+    padding-right: 40px;
+
+}
+#about div h1{
+    padding-top: 30px;
+
+}
+#about div p{
+    padding-bottom: 30px;
+}
+
+#team{
+  background-color: rgb(224, 198, 157);
+  padding-top: 50px;
+  padding-bottom: 40px;
+  height: 1250px;
+
+}
+#team1 div{
+  height: 200px;
+}
+#team1 div div{
+  padding-top: 70px;
+  border: 2px solid rgb(47, 32, 11); 
+  background-color: rgb(239, 222, 199);
+  border-radius: 20%;  
+}
+
+#pic{
+  background-image: url(../img/image/kkopi\ 4.jpg);
+  width: auto;
+  height: 40vh;
+  background-size: contain;
+}
+
+
+#footer{
+  background-color: rgba(33, 18, 3, 0.803);
+  padding: 20px;
+  color: lightgray;
+    
+  }
+
+  
+@media (min-width: 768px) {
+    #head div{
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+    }
+
+    #landing div div h1{
+        margin-top: 100px;
+    }
+
+    #landing{
+        padding-bottom: 50px;
+
+    }
+
+    #team{
+      height: 600px;
+    
+    }
+    #team1 div{
+      height: 200px;
+    }
+}
+
+
+@media (min-width: 992px) {
+    #head div{
+        font-size: 100px;
+    }
+
+
+ }

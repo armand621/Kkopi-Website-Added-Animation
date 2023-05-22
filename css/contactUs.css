@@ -1,0 +1,173 @@
+@font-face {
+    font-family: 'CutieFont';
+    src: url('../font/BreeSerif-Regular.ttf') format('OpenType');
+  }
+
+  @font-face {
+    font-family: 'CutieFontt';
+    src: url('../font/Shrikhand-Regular.ttf') format('OpenType');
+  }
+
+  @font-face {
+    font-family: 'CutieFonttt';
+    src: url('../font/TitanOne-Regular.ttf') format('OpenType');
+  }
+
+  @font-face {
+    font-family: 'CutieFontttt';
+    src: url('../font/LilitaOne-Regular.ttf') format('OpenType');
+  }
+
+  @font-face {
+    font-family: 'CutieFonttttt';
+    src: url('../font/Chewy-Regular.ttf') format('OpenType');
+  }
+  
+  @font-face {
+    font-family: 'CutieFontttttt';
+    src: url('../font/DancingScript-VariableFont_wght.ttf') format('OpenType');
+  }
+
+  @font-face {
+    font-family: 'CutieFonttttttt';
+    src: url('../font/LeckerliOne-Regular.ttf') format('OpenType');
+  }
+
+  @font-face {
+    font-family: 'CutieFontttttttt';
+    src: url('../font/Futura Std Heavy.ttf') format('OpenType');
+  }
+
+  
+
+#mywebsite{
+    width: auto;
+    background-color: rgba(229, 192, 151, 0.677);   
+}
+
+/* .............................................. */
+#landing{
+    padding-top: 100px;
+    padding-bottom: 10px;
+    background-color: rgba(151, 138, 117, 0.396);
+}
+
+#landing div div{
+    height: 350px;
+}
+
+#form{
+    background-color: #c6c19b;
+    height: 600px;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    background-color:#513610;
+    color:#ccc;
+    border-radius: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+#form form {
+    background-color: #9a8145;
+    padding: 20px;
+    border-radius: 4px;
+    
+}
+
+#form{
+    padding-top: 50px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+  }
+
+  textarea {
+    resize: vertical;
+    height: 150px;
+  }
+
+  input[type="submit"] {
+    background-color: #ffbb00;
+    color: #000000;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #32270c;
+    color: whitesmoke;
+
+  }
+
+
+#infos{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: rgb(242, 228, 202);
+}
+
+#infos div div{
+    background-color: #b89361b2;
+    border-radius: 10%;
+
+}
+
+
+
+
+
+
+
+#footer{
+    background-color: rgba(33, 18, 3, 0.803);
+    padding: 20px;
+    color: lightgray;
+    
+  }
+
+  
+@media (min-width: 768px) {
+    #head div{
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+    }
+}
+
+
+@media (min-width: 992px) {
+    #head div{
+        font-size: 100px;
+    }
+
+
+ }

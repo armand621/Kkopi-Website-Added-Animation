@@ -1,0 +1,284 @@
+@font-face {
+    font-family: 'CutieFont';
+    src: url('./font/BreeSerif-Regular.ttf') format('OpenType');
+  }
+
+  @font-face {
+    font-family: 'CutieFontt';
+    src: url('./font/Shrikhand-Regular.ttf') format('OpenType');
+  }
+
+  @font-face {
+    font-family: 'CutieFonttt';
+    src: url('./font/TitanOne-Regular.ttf') format('OpenType');
+  }
+
+  @font-face {
+    font-family: 'CutieFontttt';
+    src: url('./font/LilitaOne-Regular.ttf') format('OpenType');
+  }
+
+  @font-face {
+    font-family: 'CutieFonttttt';
+    src: url('./font/Chewy-Regular.ttf') format('OpenType');
+  }
+  
+  @font-face {
+    font-family: 'CutieFontttttt';
+    src: url('./font/DancingScript-VariableFont_wght.ttf') format('OpenType');
+  }
+
+  @font-face {
+    font-family: 'CutieFonttttttt';
+    src: url('./font/LeckerliOne-Regular.ttf') format('OpenType');
+  }
+
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+  
+#mywebsite{
+  background-color: rgb(214, 204, 191);
+}
+
+
+  #landing{
+
+    /* background: linear-gradient(0deg, rgba(255,255,255, 0.2), rgba(0,0,0,0.2)), url("img/image/5.jpg'); */
+    background: url('/img/image/5.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    color: var(--color-white);
+}
+
+
+.got{
+
+  margin: 40px 0 0 0;
+}
+
+.got h1{
+  padding: 0 0 40px 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+
+.que-h3 h3{
+  font-family: 'Secular One', sans-serif;
+  font-weight: bold;
+  color: #271f05;
+  font-size: 20px;
+}
+
+
+.que-h3 p{
+  font-family: 'Roboto', sans-serif;
+}
+
+.got-1 {
+  margin-top:100px;
+}
+
+
+
+
+/* this part is for the form */
+button, input {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+}
+
+.form-bk {
+  display: flex;
+  min-height: 75vh;
+}
+
+.form-con{
+  flex: 0 1 700px;
+  margin: auto;
+  margin-top: 30px;
+  padding: 10px;
+}
+
+.screen {
+  position: relative;
+  background: #271f05;
+  border-radius: 15px;
+}
+
+.screen:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  right: 20px;
+  bottom: 0;
+  border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
+  z-index: -1;
+}
+
+
+.screen-body {
+  display: flex;
+}
+
+.screen-body-item {
+  flex: 1;
+  padding: 50px;
+}
+
+.screen-body-item.left {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-title {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: white;
+  font-size: 26px;
+}
+
+.app-contact {
+  margin-top: auto;
+  font-size: 10px;
+  color: #888;
+}
+
+.app-form-group {
+  margin-bottom: 15px;
+}
+
+.app-form-group.message {
+  margin-top: 40px;
+}
+
+.app-form-group.buttons {
+  margin-bottom: 0;
+  text-align: right;
+}
+
+.app-form-control {
+  width: 100%;
+  padding: 10px 0;
+  background: none;
+  border: none;
+  border-bottom: 1px solid gray;
+  color: #ddd;
+  font-size: 14px;
+  text-transform: uppercase;
+  outline: none;
+  transition: border-color .2s;
+}
+
+.app-form-control::placeholder {
+  color:gray;
+}
+
+.app-form-control:focus {
+  border-bottom-color: #ddd;
+}
+
+.app-form-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+}
+
+.app-form-button:hover {
+  color: #FCCB06;
+}
+
+
+/* animation for hidden */
+.hidden{
+  opacity:0;
+  transition: all 1.5s;
+  transform: translateX(-100%);
+  }
+  
+  .show{
+  
+  opacity:1;
+  transform:translateX(0);
+  }
+
+#footer{
+  background-color: rgba(33, 18, 3, 0.875);
+  padding: 20px;
+  color: lightgray;
+  margin-top: 0px;
+  
+}
+
+@media only screen and (max-width: 520px) {
+  .screen-body {
+    flex-direction: column;
+  }
+
+  .screen-body-item.left {
+    margin-bottom: 30px;
+  }
+
+  .app-title {
+    flex-direction: row;
+  }
+
+  .app-title span {
+    margin-right: 12px;
+  }
+
+  .app-title:after {
+    display: none;
+  }
+
+  
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  .screen-body {
+    padding: 40px;
+  }
+
+  .screen-body-item {
+    padding: 0;
+  }
+}
+
+
+
+@media only screen and (min-width: 768px){
+
+  .col-12 h3{
+    font-size:25px;
+  }
+
+  .col-12 p{
+    font-size:16px;
+  }
+
+
+}
+
