@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/icedAmericano.css">
+    <link rel="stylesheet" href="./css/addsOn.css">
     <title>Kkopi Tea</title>
 </head>
 <body id="myweb" data-aos-easing="ease-in-out" data-aos-duration="1000" data-aos-delay="0">
@@ -46,7 +46,7 @@
                       <li><a class="dropdown-item" href="addsOn.html">Add-Ons</a></li>
                     </ul>
                   <li class="nav-item">
-                        <a class="nav-link" href="#">Cart</a>
+                        <a class="nav-link" href="cart.html">Cart</a>
                   </li>
                   <li class="nav-item ">
                     <a class="nav-link" href="aboutUs.html">About Us</a>
@@ -87,10 +87,10 @@
   <section id="milktea" class="py-5  " >
     <div class="container">
       <div class="row" style="font-family: CutieFontttttttt;">
-        <div class="col-12 text-center mb-5">
+        <div class="hidden col-12 text-center mb-5">
           <h1 class="fw-bold"  style=" font-size: 60px; font-family: CutieFonttttttt; padding-top: 80px;">Add-Ons</h1>
         </div>
-        <div class="col-md-6 col-lg-3 mb-4" style="padding-bottom: 50px;">
+        <div class="hidden ado-1 col-md-6 col-lg-3 mb-4" style="padding-bottom: 50px;">
           <div class="card h-100 shadow">
             <img src="./img/image/es.png" class="card-img-top img-fluid" alt="...">
             <div class="card-body">
@@ -100,7 +100,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-3 mb-4" style="padding-bottom: 50px;">
+        <div class="hidden ado-2 col-md-6 col-lg-3 mb-4" style="padding-bottom: 50px;">
           <div class="card h-100 shadow">
             <img src="./img/image/tc.png" class="card-img-top img-fluid" alt="...">
             <div class="card-body">
@@ -110,7 +110,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-3 mb-4" style="padding-bottom: 50px;">
+        <div class="hidden ado-3 col-md-6 col-lg-3 mb-4" style="padding-bottom: 50px;">
           <div class="card h-100 shadow">
             <img src="./img/image/cf.png" class="card-img-top img-fluid" alt="...">
             <div class="card-body">
@@ -120,7 +120,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-3 mb-4" style="padding-bottom: 50px;">
+        <div class="hidden ado-4 col-md-6 col-lg-3 mb-4" style="padding-bottom: 50px;">
           <div class="card h-100 shadow">
             <img src="./img/image/n.jpg" class="card-img-top img-fluid" alt="...">
             <div class="card-body">
@@ -184,5 +184,25 @@
   <p class="text-center mb-0">&copy;Kkopi.Tea 2023  |  @ll Rights Reserved</p>
 </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+                   <!-- this is for the animation -->
+                   <script type="text/javascript">
+
+                    const observer = new IntersectionObserver((samples) =>{
+                       samples.forEach((sample) => {
+                       console.log(sample)
+                       if (sample.isIntersecting){
+                          sample.target.classList.add('show');
+                       } else{
+                          sample.target.classList.remove('show');
+                          }
+                       });
+                    
+                    });
+                    
+                    
+                    
+                    const hiddenElements = document.querySelectorAll('.hidden');
+                    hiddenElements.forEach((armand) => observer.observe(armand));
+                    </script>
 </body>
 </html>
