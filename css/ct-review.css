@@ -6,8 +6,7 @@
 
   #landing{
 
-    background: linear-gradient(0deg, rgba(255,255,255, 0.4), rgba(0,0,0,0.8)), url('/img/image/landing.jpg');
-    /* background: url('img/image/2.jpg'); */
+    background: linear-gradient(0deg, rgba(255,255,255, 0.4), rgba(0,0,0,0.8)), url('../img/image/landing.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
