@@ -43,7 +43,7 @@
   #landing{
 
     /* background: linear-gradient(0deg, rgba(255,255,255, 0.2), rgba(0,0,0,0.2)), url("img/image/5.jpg'); */
-    background: url('/img/image/5.jpg');
+    background: url('../img/image/5.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -110,6 +110,75 @@ p{
 
 
 /* this part is for the form */ 
+
+#form{
+  background-color: #c6c19b;
+  height: 600px;
+}
+
+#form form {
+  background-color: #9a8145;
+  padding: 20px;
+  border-radius: 4px;
+  
+}
+
+#form{
+  padding-top: 50px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+textarea {
+  resize: vertical;
+  height: 150px;
+}
+
+input[type="submit"] {
+  background-color: #ffbb00;
+  color: #000000;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+input[type="submit"]:hover {
+  background-color: #32270c;
+  color: whitesmoke;
+
+}
+
+
+#infos{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: rgb(242, 228, 202);
+}
+
+#infos div div{
+  background-color: #b89361b2;
+  border-radius: 10%;
+
+}
+
+
 
 /* animation for hidden */
 
