@@ -118,7 +118,7 @@ button, input {
 
 .form-bk {
   display: flex;
-  min-height: 75vh;
+  height: auto;
 }
 
 .form-con{
